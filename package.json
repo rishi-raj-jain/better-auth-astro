@@ -1,0 +1,21 @@
+{
+  "type": "module",
+  "name": "better-auth-astro",
+  "scripts": {
+    "dev": "dotenv -- astro dev",
+    "build": "dotenv -- astro build",
+    "preview": "dotenv -- astro preview"
+  },
+  "dependencies": {
+    "@astrojs/vercel": "^7.8.2",
+    "astro": "^4.16.13",
+    "better-auth": "^1.0.0",
+    "pg": "^8.13.1",
+    "typescript": "^5.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.3",
+    "@types/pg": "^8.11.10",
+    "dotenv-cli": "^7.4.4"
+  }
+}
