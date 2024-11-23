@@ -2,9 +2,7 @@
 if (!Astro.locals.user?.id) return Astro.redirect('/signin')
 ---
 
-<span>
-  {JSON.stringify(Astro.locals.user)}
-</span>
+{JSON.stringify(Astro.locals.user)}
 <button id="signOutButton">Sign Out</button>
 
 <script>
