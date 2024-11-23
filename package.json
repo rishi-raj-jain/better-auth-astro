@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "dotenv -- astro dev",
     "build": "dotenv -- astro build",
-    "preview": "dotenv -- astro preview"
+    "preview": "dotenv -- astro preview",
+    "fmt": "prettier --write '**/*' --ignore-unknown"
   },
   "dependencies": {
     "@astrojs/vercel": "^7.8.2",
@@ -16,6 +17,9 @@
   "devDependencies": {
     "@types/node": "^22.9.3",
     "@types/pg": "^8.11.10",
-    "dotenv-cli": "^7.4.4"
+    "dotenv-cli": "^7.4.4",
+    "prettier": "^3.3.3",
+    "prettier-plugin-astro": "^0.14.1",
+    "prettier-plugin-organize-imports": "^4.1.0"
   }
 }

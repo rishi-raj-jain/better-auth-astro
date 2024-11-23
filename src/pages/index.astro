@@ -1,18 +1,16 @@
 ---
-if (!Astro.locals.user?.id) return Astro.redirect("/signin");
+if (!Astro.locals.user?.id) return Astro.redirect('/signin')
 ---
 
 <span>
-    {JSON.stringify(Astro.locals.user)}
+  {JSON.stringify(Astro.locals.user)}
 </span>
 <button id="signOutButton">Sign Out</button>
 
 <script>
-    import { authClient } from "@/auth-client";
-    document
-        .getElementById("signOutButton")
-        ?.addEventListener("click", async () => {
-            await authClient.signOut();
-            window.location.href = "/signin";
-        });
+  import { authClient } from '@/auth-client'
+  document.getElementById('signOutButton')?.addEventListener('click', async () => {
+    await authClient.signOut()
+    window.location.href = '/signin'
+  })
 </script>
